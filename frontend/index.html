@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PocketSmart AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>PocketSmart AI</h1>
+
+    <p class="subtitle">
+        Your Smart Budget & Recommendation Assistant
+    </p>
+
+    <div class="form-box">
+
+        <h2>Budget Analysis</h2>
+
+        <input
+            type="number"
+            id="income"
+            placeholder="Monthly Income ₹"
+        >
+
+        <input
+            type="number"
+            id="food"
+            placeholder="Food Expense ₹"
+        >
+
+        <input
+            type="number"
+            id="travel"
+            placeholder="Travel Expense ₹"
+        >
+
+        <input
+            type="number"
+            id="shopping"
+            placeholder="Shopping Expense ₹"
+        >
+
+        <input
+            type="number"
+            id="bills"
+            placeholder="Bills ₹"
+        >
+
+        <button onclick="analyzeBudget()">
+            Analyze with AI
+        </button>
+
+    </div>
+
+    <div id="result" class="result hidden">
+
+        <h2>Smart Budget Report</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Income</p>
+                <h3 id="resultIncome">₹0</h3>
+            </div>
+
+            <div class="card">
+                <p>Expenses</p>
+                <h3 id="resultExpense">₹0</h3>
+            </div>
+
+            <div class="card">
+                <p>Balance</p>
+                <h3 id="resultBalance">₹0</h3>
+            </div>
+
+            <div class="card">
+                <p>Savings</p>
+                <h3 id="resultSaving">0%</h3>
+            </div>
+
+        </div>
+
+        <div class="ai-box">
+
+            <h3>AI Recommendation</h3>
+
+            <p id="aiRecommendation">
+                Waiting for AI...
+            </p>
+
+        </div>
+
+        <div class="ai-box">
+
+            <h3>Smart Recommendations</h3>
+
+            <div id="products"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

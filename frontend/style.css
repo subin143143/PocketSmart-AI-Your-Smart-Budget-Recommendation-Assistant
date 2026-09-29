@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07111f,
+            #111c35
+        );
+
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+
+    margin: auto;
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #38bdf8,
+            #a78bfa
+        );
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    max-width: 520px;
+
+    margin: auto;
+    padding: 30px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid
+        rgba(255,255,255,0.15);
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(10px);
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 8px 0;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            90deg,
+            #0ea5e9,
+            #8b5cf6
+        );
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cards {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.card {
+    width: 190px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border: 1px solid
+        rgba(255,255,255,0.15);
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.ai-box {
+    max-width: 820px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(49,46,129,0.45);
+
+    border: 1px solid #6366f1;
+
+    text-align: left;
+}
